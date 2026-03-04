@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martinez Technology Group | Managed IT Services Southwest Florida</title>
+    <meta name="description" content="Leading MSP serving Lee, Collier & Hendry counties. 24/7 IT support, cybersecurity, cloud services & strategic IT consulting. Schedule your free assessment today.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#0f172a',
+                        secondary: '#1e40af',
+                        accent: '#3b82f6',
+                        success: '#10b981',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-text {
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero-pattern {
+            background-image: radial-gradient(circle at 1px 1px, rgba(59, 130, 246, 0.15) 1px, transparent 0);
+            background-size: 40px 40px;
+        }
+        .service-card:hover .service-icon {
+            transform: scale(1.1) rotate(5deg);
+        }
+        .service-icon {
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+<body class="font-sans text-slate-800 antialiased">
+    
+    <!-- Top Bar -->
+    <div class="bg-slate-900 text-white py-2.5 px-4 text-sm">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-2 text-slate-300">
+                <i data-lucide="map-pin" class="w-4 h-4 text-blue-400"></i>
+                <span class="font-medium">Serving Lee • Collier • Hendry</span>
+                <span class="hidden sm:inline text-slate-500">|</span>
+                <span class="hidden sm:inline text-emerald-400 flex items-center gap-1">
+                    <i data-lucide="clock" class="w-3 h-3"></i>
+                    After-hours onsite available
+                </span>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="tel:+12395551234" class="flex items-center gap-2 hover:text-blue-400 transition-colors">
+                    <i data-lucide="phone" class="w-4 h-4"></i>
+                    <span class="font-semibold">(239) 241-3885</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-800 rounded-lg flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all">
+                        <i data-lucide="shield" class="w-6 h-6 text-white"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-bold text-xl text-slate-900 leading-tight">Martinez</span>
+                        <span class="text-xs text-slate-500 uppercase tracking-wider">Technology Group</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden lg:flex items-center gap-8">
+                    <a href="#services" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">Services</a>
+                        <a href="#pricing" class="text-slate-700 hover:text-blue-600 font-semibold transition-colors">Pricing</a>
+                    <a href="#industries" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">Industries</a>
+                    <a href="#about" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">About</a>
+                    <a href="#contact" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">Contact</a>
+                </div>
+
+                <!-- CTA Button -->
+                <div class="hidden lg:block"> </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="lg:hidden p-2 text-slate-600 hover:text-slate-900">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-slate-100 absolute w-full shadow-xl">
+            <div class="px-4 py-6 space-y-4">
+                <a href="#services" class="block text-lg font-medium text-slate-700 hover:text-blue-600 py-2">Services</a>
+                <a href="#industries" class="block text-lg font-medium text-slate-700 hover:text-blue-600 py-2">Industries</a>
+                <a href="#about" class="block text-lg font-medium text-slate-700 hover:text-blue-600 py-2">About</a>
+                
+                <a href="#contact" class="block text-lg font-medium text-slate-700 hover:text-blue-600 py-2">Contact</a>
+                <a href="#contact" class="block w-full text-center bg-blue-600 text-white px-6 py-4 rounded-lg font-bold mt-4">
+                    Schedule Free IT Assessment
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-slate-50 hero-pattern overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-slate-50 via-blue-50/30 to-white"></div>
+        <div class="absolute right-0 top-0 w-1/2 h-full bg-gradient-to-l from-blue-100/20 to-transparent"></div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-24 lg:pt-32 lg:pb-40">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8">
+                    <div class="inline-flex items-center gap-2 bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold">
+                        <i data-lucide="award" class="w-4 h-4"></i>
+                  Southwest Florida's Trusted IT Profesiional Since 2009&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </div>
+                    
+                    <h1 class="text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight text-slate-900">
+                        Managed IT <br>
+                        <span class="gradient-text">That Works</span> <br>
+                        While You Work
+                    </h1>
+                    
+                    <p class="text-xl text-slate-600 leading-relaxed max-w-lg">
+                        Stop worrying about downtime, cybersecurity threats, and IT headaches. We provide 24/7 proactive IT management for businesses in Lee, Collier, and Hendry counties.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4"> <a href="#services" class="bg-white hover:bg-slate-50 text-slate-900 border-2 border-slate-200 px-8 py-4 rounded-xl font-bold text-lg transition-all hover:border-slate-300 flex items-center justify-center gap-2">
+                        Explore Services
+                    </a>
+                    </div>
+
+                    <div class="flex items-center gap-6 pt-4 text-sm text-slate-500">
+                        <div class="flex items-center gap-2">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-emerald-500"></i>
+                            <span class="font-medium">24/7 Support</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-emerald-500"></i>
+                            <span class="font-medium">Local Team</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-emerald-500"></i>
+                            <span class="font-medium">15-min Response</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative lg:pl-12">
+                    <div class="relative">
+                        <div class="absolute -inset-4 bg-gradient-to-r from-blue-600 to-blue-400 rounded-3xl opacity-20 blur-2xl"></div>
+                        <img src="http://static.photos/technology/640x480/123" alt="IT Professional monitoring network" class="relative rounded-2xl shadow-2xl w-full object-cover h-[500px]">
+                        
+                        <!-- Floating Stats Card -->
+                        <!-- Floating Support Card -->                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Trust Bar -->
+        <div class="border-t border-slate-200 bg-white/50 backdrop-blur-sm"> </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <p class="text-blue-600 font-semibold mb-2 uppercase tracking-wide">Our Services</p>
+                <h2 class="text-4xl font-bold text-slate-900 mb-4">Complete IT Solutions for Modern Business</h2>
+                <p class="text-lg text-slate-600">From day-to-day support to strategic technology planning, we've got every aspect of your IT infrastructure covered.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card group bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:shadow-xl hover:border-blue-200 transition-all cursor-pointer">
+                    <div class="service-icon w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6 text-blue-600">
+                        <i data-lucide="shield-check" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Managed Security</h3>
+                    <p class="text-slate-600 mb-4">24/7 threat monitoring, endpoint protection, and cybersecurity training to keep your business safe from evolving threats.</p>
+                    <a href="#" class="inline-flex items-center text-blue-600 font-semibold group-hover:gap-2 transition-all">
+                        Learn more <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                    </a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card group bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:shadow-xl hover:border-blue-200 transition-all cursor-pointer">
+                    <div class="service-icon w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6 text-blue-600">
+                        <i data-lucide="cloud" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Cloud Services</h3>
+                    <p class="text-slate-600 mb-4">Seamless migration, management, and optimization of cloud infrastructure including Microsoft 365 and Azure environments.</p>
+                    <a href="#" class="inline-flex items-center text-blue-600 font-semibold group-hover:gap-2 transition-all">
+                        Learn more <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                    </a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card group bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:shadow-xl hover:border-blue-200 transition-all cursor-pointer">
+                    <div class="service-icon w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6 text-blue-600">
+                        <i data-lucide="headset" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Help Desk Support</h3>
+                    <p class="text-slate-600 mb-4">Unlimited remote and onsite support with guaranteed 15-minute response times for critical issues.</p>
+                    <a href="#" class="inline-flex items-center text-blue-600 font-semibold group-hover:gap-2 transition-all">
+                        Learn more <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                    </a>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card group bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:shadow-xl hover:border-blue-200 transition-all cursor-pointer">
+                    <div class="service-icon w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6 text-blue-600">
+                        <i data-lucide="server" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Infrastructure Management</h3>
+                    <p class="text-slate-600 mb-4">Proactive monitoring and maintenance of servers, networks, and critical systems to prevent downtime.</p>
+                    <a href="#" class="inline-flex items-center text-blue-600 font-semibold group-hover:gap-2 transition-all">
+                        Learn more <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                    </a>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="service-card group bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:shadow-xl hover:border-blue-200 transition-all cursor-pointer">
+                    <div class="service-icon w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6 text-blue-600">
+                        <i data-lucide="clipboard-list" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">IT Consulting</h3>
+                    <p class="text-slate-600 mb-4">Strategic technology roadmaps, vendor management, and budget planning aligned with your business goals.</p>
+                    <a href="#" class="inline-flex items-center text-blue-600 font-semibold group-hover:gap-2 transition-all">
+                        Learn more <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                    </a>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="service-card group bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:shadow-xl hover:border-blue-200 transition-all cursor-pointer">
+                    <div class="service-icon w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6 text-blue-600">
+                        <i data-lucide="graduation-cap" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Cybersecurity Training</h3>
+                    <p class="text-slate-600 mb-4">Employee awareness programs, phishing simulations, and compliance training to reduce human error risks.</p>
+                    <a href="#" class="inline-flex items-center text-blue-600 font-semibold group-hover:gap-2 transition-all">
+                        Learn more <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries Section -->
+    <section id="industries" class="py-24 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <p class="text-blue-400 font-semibold mb-2 uppercase tracking-wide">Who We Serve</p>
+                    <h2 class="text-4xl font-bold mb-6">Industry-Specific IT Expertise</h2>
+                    <p class="text-slate-300 text-lg mb-8">We understand that every industry has unique technology challenges and compliance requirements. Our team brings specialized expertise to your sector.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <div class="w-12 h-12 bg-blue-600/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="stethoscope" class="w-6 h-6 text-blue-400"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-1">Healthcare</h3>
+                                <p class="text-slate-400">HIPAA-compliant IT solutions, EHR support, and secure patient data management.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4">
+                            <div class="w-12 h-12 bg-blue-600/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="scale" class="w-6 h-6 text-blue-400"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-1">Legal</h3>
+                                <p class="text-slate-400">Secure document management, eDiscovery support, and confidential client data protection.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4">
+                            <div class="w-12 h-12 bg-blue-600/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="calculator" class="w-6 h-6 text-blue-400"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-1">Accounting & Finance</h3>
+                                <p class="text-slate-400">SOC 2 compliance, secure financial data handling, and audit-ready IT infrastructure.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4">
+                            <div class="w-12 h-12 bg-blue-600/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="building" class="w-6 h-6 text-blue-400"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-1">Construction & Engineering</h3>
+                                <p class="text-slate-400">Project management software support, mobile workforce solutions, and blueprint digitization.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="space-y-4 mt-8">
+                        <div class="bg-slate-800 rounded-2xl p-6 border border-slate-700">
+                            <i data-lucide="building-2" class="w-8 h-8 text-blue-400 mb-4"></i>
+                            <h4 class="font-bold mb-1">Real Estate</h4>
+                            <p class="text-sm text-slate-400">MLS integration, secure transactions</p>
+                        </div>
+                        <div class="bg-slate-800 rounded-2xl p-6 border border-slate-700">
+                            <i data-lucide="shopping-cart" class="w-8 h-8 text-blue-400 mb-4"></i>
+                            <h4 class="font-bold mb-1">Retail</h4>
+                            <p class="text-sm text-slate-400">POS systems, inventory management</p>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="bg-slate-800 rounded-2xl p-6 border border-slate-700">
+                            <i data-lucide="factory" class="w-8 h-8 text-blue-400 mb-4"></i>
+                            <h4 class="font-bold mb-1">Manufacturing</h4>
+                            <p class="text-sm text-slate-400">ERP support, IoT integration</p>
+                        </div>
+                        <div class="bg-slate-800 rounded-2xl p-6 border border-slate-700">
+                            <i data-lucide="truck" class="w-8 h-8 text-blue-400 mb-4"></i>
+                            <h4 class="font-bold mb-1">Logistics</h4>
+                            <p class="text-sm text-slate-400">Fleet tracking, route optimization</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <p class="text-blue-600 font-semibold mb-2 uppercase tracking-wide">About Martinez Technology Group</p>
+                    <h2 class="text-4xl font-bold text-slate-900 mb-6">Local roots. Enterprise-grade IT.</h2>
+                    <!-- Professional Headshot -->
+                    <div class="flex items-center gap-6 mb-8">
+                        <img src="images/headshot.jpeg" alt="Founder Headshot"
+                            class="w-32 h-32 rounded-2xl object-cover border-4 border-blue-100 shadow-lg">
+                        <div>
+                            <p class="text-lg font-bold text-slate-900">Jesus Martinez</p>
+                            <p class="text-slate-600">Founder · Martinez Technology Group</p>
+                            <p class="text-sm text-slate-500">Network Engineer · IT Consultant</p>
+                        </div>
+                    </div>
+
+                    <p class="text-slate-600 text-lg leading-relaxed mb-6">
+                      Martinez Technology Group helps Southwest Florida small businesses stay secure, productive, and prepared for growth.
+                      We combine big-network experience with a hands-on, local approach,&nbsp; &nbsp;so you get dependable IT without the runaround.</p>
+
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-start gap-3">
+                            <div class="mt-1 w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="badge-check" class="w-4 h-4 text-blue-600"></i>
+                            </div>
+                            <p class="text-slate-700">
+                                <span class="font-semibold text-slate-900">Real-world experience:</span>
+                                16+ years in IT and network engineering—security, firewalls, switching, servers, cloud, and troubleshooting under pressure.
+                            </p>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <div class="mt-1 w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="map" class="w-4 h-4 text-blue-600"></i>
+                            </div>
+                            <p class="text-slate-700">
+                                <span class="font-semibold text-slate-900">Southwest Florida focused:</span>
+                                Based in Lehigh Acres and serving Lee, Collier, and Hendry with fast onsite options when it matters.
+                            </p>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <div class="mt-1 w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="shield" class="w-4 h-4 text-blue-600"></i>
+                            </div>
+                            <p class="text-slate-700">
+                                <span class="font-semibold text-slate-900">Security-first mindset:</span>
+                                Proactive monitoring, patching, backups, MFA, and real training—because most incidents start with one click.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-50 border border-slate-100 rounded-2xl p-6">
+                        <p class="text-slate-700 leading-relaxed">
+                            <span class="font-semibold text-slate-900">Our story:</span>
+                            Built by a Southwest Florida local with Immokalee roots, Martinez Technology Group exists to bring reliable,
+                            honest IT help to the same communities we grew up in.
+                        </p>
+                    </div>
+
+                    <div class="mt-8 flex flex-col sm:flex-row gap-4">
+                        <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all hover:shadow-xl hover:-translate-y-1 inline-flex items-center justify-center gap-2">
+                            Meet With Us
+                            <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#services" class="bg-white hover:bg-slate-50 text-slate-900 border-2 border-slate-200 px-8 py-4 rounded-xl font-bold text-lg transition-all hover:border-slate-300 inline-flex items-center justify-center gap-2">
+                            See Our Services
+                            <i data-lucide="layers" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="absolute -inset-4 bg-gradient-to-r from-blue-600 to-blue-400 rounded-3xl opacity-15 blur-2xl"></div>
+
+                    <div class="relative bg-slate-900 rounded-3xl p-10 text-white overflow-hidden">
+                        <div class="absolute inset-0 hero-pattern opacity-10"></div>
+
+                        <div class="relative">
+                            <div class="flex items-center justify-between gap-6 mb-10">
+                                <div>
+                                    <p class="text-blue-200 font-semibold uppercase tracking-wide text-sm">What you can expect</p>
+                                    <h3 class="text-2xl font-bold mt-1">A better IT experience</h3>
+                                </div>
+                                <div class="w-12 h-12 bg-blue-600/20 rounded-2xl flex items-center justify-center">
+                                    <i data-lucide="sparkles" class="w-6 h-6 text-blue-300"></i>
+                                </div>
+                            </div>
+
+                            <div class="grid sm:grid-cols-2 gap-6">
+                                <div class="bg-white/5 border border-white/10 rounded-2xl p-6">
+                                    <i data-lucide="clock" class="w-6 h-6 text-blue-300 mb-4"></i>
+                                    <p class="font-bold mb-1">Fast response</p>
+                                    <p class="text-sm text-slate-300">Clear priorities and quick action—no ticket black hole.</p>
+                                </div>
+
+                                <div class="bg-white/5 border border-white/10 rounded-2xl p-6">
+                                    <i data-lucide="clipboard-check" class="w-6 h-6 text-blue-300 mb-4"></i>
+                                    <p class="font-bold mb-1">Simple plans</p>
+                                    <p class="text-sm text-slate-300">Straightforward recommendations and honest pricing.</p>
+                                </div>
+
+                                <div class="bg-white/5 border border-white/10 rounded-2xl p-6">
+                                    <i data-lucide="hard-drive" class="w-6 h-6 text-blue-300 mb-4"></i>
+                                    <p class="font-bold mb-1">Backup & recovery</p>
+                                    <p class="text-sm text-slate-300">Tested restores, not just “we have backups.”</p>
+                                </div>
+
+                                <div class="bg-white/5 border border-white/10 rounded-2xl p-6">
+                                    <i data-lucide="shield-check" class="w-6 h-6 text-blue-300 mb-4"></i>
+                                    <p class="font-bold mb-1">Security by default</p>
+                                    <p class="text-sm text-slate-300">MFA, endpoint protection, and best-practice hardening.</p>
+                                </div>
+                            </div>
+
+                            <div class="mt-10 grid grid-cols-3 gap-4 text-center">
+                                <div class="bg-white/5 border border-white/10 rounded-2xl p-5">
+                                    <p class="text-3xl font-bold">16+</p>
+                                    <p class="text-xs text-slate-300 mt-1">Years</p>
+                                </div>
+                                <div class="bg-white/5 border border-white/10 rounded-2xl p-5">
+                                    <p class="text-3xl font-bold">30m</p>
+                                    <p class="text-xs text-slate-300 mt-1">Critical Response</p>
+                                </div>
+                                <div class="bg-white/5 border border-white/10 rounded-2xl p-5">
+                                    <p class="text-3xl font-bold">24/7</p>
+                                    <p class="text-xs text-slate-300 mt-1">Support</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us / Stats -->
+    <section class="py-24 bg-blue-600">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-center text-white">
+                <div>
+                    <p class="text-5xl font-bold mb-2">16+</p>
+                    <p class="text-blue-100 font-medium">Years Experience</p>
+                </div>
+                <div>
+                    <p class="text-5xl font-bold mb-2">50+</p>
+                    <p class="text-blue-100 font-medium">Local Businesses</p>
+                </div>
+                <div>
+                    <p class="text-5xl font-bold mb-2">99.9%</p>
+                    <p class="text-blue-100 font-medium">Uptime SLA</p>
+                </div>
+                <div>
+                    <p class="text-5xl font-bold mb-2">&lt;30min</p>
+                    <p class="text-blue-100 font-medium">Response Time</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <p class="text-blue-600 font-semibold mb-2 uppercase tracking-wide">Testimonials</p>
+                <h2 class="text-4xl font-bold text-slate-900">What Our Clients Say</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl p-8 shadow-sm border border-slate-100">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                    </div>
+                    <p class="text-slate-600 mb-6 italic">"Martinez Technology Group transformed our practice. We've had zero downtime in 18 months and their team feels like an extension of our own staff."</p>
+                    <div class="flex items-center gap-4">
+                        <img src="http://static.photos/people/200x200/1" alt="Client" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <p class="font-bold text-slate-900">Dr. Sarah Chen</p>
+                            <p class="text-sm text-slate-500">Cape Coral Family Practice</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-sm border border-slate-100">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                    </div>
+                    <p class="text-slate-600 mb-6 italic">"After a ransomware scare at another firm, we switched to Martinez. Their security protocols are top-notch and their team is incredibly responsive."</p>
+                    <div class="flex items-center gap-4">
+                        <img src="http://static.photos/people/200x200/2" alt="Client" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <p class="font-bold text-slate-900">Michael Torres</p>
+                            <p class="text-sm text-slate-500">Gulf Coast Legal Group</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-sm border border-slate-100">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                    </div>
+                    <p class="text-slate-600 mb-6 italic">"Scaling from 10 to 50 employees was seamless with Martinez handling our IT. They anticipated our needs before we even knew we had them."</p>
+                    <div class="flex items-center gap-4">
+                        <img src="http://static.photos/people/200x200/3" alt="Client" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <p class="font-bold text-slate-900">Jennifer Walsh</p>
+                            <p class="text-sm text-slate-500">Naples Construction Co.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-24 bg-slate-900 relative overflow-hidden">
+        <div class="absolute inset-0 hero-pattern opacity-10"></div>
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative text-center">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">Ready to Stop Worrying About IT?</h2>
+            <p class="text-xl text-slate-300 mb-10 max-w-2xl mx-auto">Join over  Southwest Florida businesses that trust Martinez Technology Group for their IT needs. Get your free, no-obligation assessment today.</p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+                <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 rounded-xl font-bold text-lg transition-all hover:shadow-xl hover:-translate-y-1 inline-flex items-center justify-center gap-2">
+                    Schedule Free Assessment
+                    <i data-lucide="calendar" class="w-5 h-5"></i>
+                </a>
+                <a href="tel:+12395551234" class="bg-white/10 hover:bg-white/20 text-white border border-white/20 px-10 py-4 rounded-xl font-bold text-lg transition-all inline-flex items-center justify-center gap-2">
+                    Call (239) 241-3885&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <i data-lucide="phone" class="w-5 h-5"></i>
+                </a>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-6 text-slate-400 text-sm">
+                <span class="flex items-center gap-2">
+                    <i data-lucide="check-circle" class="w-4 h-4 text-emerald-400"></i> Free Network Audit
+                </span>
+                <span class="flex items-center gap-2">
+                    <i data-lucide="check-circle" class="w-4 h-4 text-emerald-400"></i> No Long-Term Contract Required
+                </span>
+                <span class="flex items-center gap-2">
+                    <i data-lucide="check-circle" class="w-4 h-4 text-emerald-400"></i> Local SW Florida Team
+                </span>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Testimonials Section -->
+    <!-- Service Plans Section -->
+    <section id="pricing" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <p class="text-blue-600 font-semibold mb-3 uppercase tracking-wide">Simple Plans</p>
+                <h2 class="text-4xl font-bold text-slate-900 mb-6">Choose the level of support you need</h2>
+                <p class="text-xl text-slate-600">
+                    Start with a plan, then we tailor it. Pricing depends on your number of users/devices and required response time.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8">
+                <div class="bg-slate-50 rounded-3xl p-10 border border-slate-100 hover:shadow-xl transition-all">
+                    <h3 class="text-2xl font-bold text-slate-900 mb-2">Starter</h3>
+                    <p class="text-slate-600 mb-6">For small teams that need reliable help when issues pop up.</p>
+                    <div class="text-4xl font-extrabold text-slate-900 mb-2">Custom</div>
+                    <p class="text-sm text-slate-500 mb-8">Monthly support retainer</p>
+
+                    <div class="space-y-3 mb-10">
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-blue-600"></i>
+                            <p class="text-slate-700">Helpdesk & remote support</p>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-blue-600"></i>
+                            <p class="text-slate-700">Device health checks</p>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-blue-600"></i>
+                            <p class="text-slate-700">Basic backup guidance</p>
+                        </div>
+                    </div>
+
+                    <a href="#contact" class="w-full bg-white hover:bg-slate-100 text-slate-900 border-2 border-slate-200 px-8 py-4 rounded-xl font-bold text-lg transition-all inline-flex items-center justify-center gap-2">
+                        Get Started
+                        <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                    </a>
+                </div>
+
+                <div class="relative bg-slate-900 rounded-3xl p-10 text-white overflow-hidden shadow-2xl">
+                    <div class="absolute -inset-10 bg-gradient-to-r from-blue-600 to-blue-400 opacity-20 blur-2xl"></div>
+                    <div class="relative">
+                        <div class="inline-flex items-center gap-2 bg-blue-600/20 border border-blue-400/30 text-blue-200 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+                            <i data-lucide="sparkles" class="w-4 h-4"></i>
+                            Most Popular
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2">Growth</h3>
+                        <p class="text-slate-300 mb-6">For teams that want proactive support and fewer surprises.</p>
+                        <div class="text-4xl font-extrabold mb-2">Custom</div>
+                        <p class="text-sm text-slate-400 mb-8">Monthly managed IT</p>
+
+                        <div class="space-y-3 mb-10">
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="check" class="w-5 h-5 text-blue-300"></i>
+                                <p>Monitoring & proactive fixes</p>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="check" class="w-5 h-5 text-blue-300"></i>
+                                <p>Patching schedule + reporting</p>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="check" class="w-5 h-5 text-blue-300"></i>
+                                <p>Backup setup + periodic restore checks</p>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="check" class="w-5 h-5 text-blue-300"></i>
+                                <p>Quarterly IT check-in</p>
+                            </div>
+                        </div>
+
+                        <a href="#contact" class="w-full bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all inline-flex items-center justify-center gap-2">
+                            Request Pricing
+                            <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-slate-50 rounded-3xl p-10 border border-slate-100 hover:shadow-xl transition-all">
+                    <h3 class="text-2xl font-bold text-slate-900 mb-2">Secure</h3>
+                    <p class="text-slate-600 mb-6">For businesses that need stronger security and tighter compliance.</p>
+                    <div class="text-4xl font-extrabold text-slate-900 mb-2">Custom</div>
+                    <p class="text-sm text-slate-500 mb-8">Monthly security-focused IT</p>
+
+                    <div class="space-y-3 mb-10">
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-blue-600"></i>
+                            <p class="text-slate-700">Security baseline implementation</p>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-blue-600"></i>
+                            <p class="text-slate-700">MFA + admin hardening</p>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-blue-600"></i>
+                            <p class="text-slate-700">Vulnerability review & remediation plan</p>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-blue-600"></i>
+                            <p class="text-slate-700">Incident response guidance</p>
+                        </div>
+                    </div>
+
+                    <a href="#contact" class="w-full bg-white hover:bg-slate-100 text-slate-900 border-2 border-slate-200 px-8 py-4 rounded-xl font-bold text-lg transition-all inline-flex items-center justify-center gap-2">
+                        Talk Security
+                        <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                    </a>
+                </div>
+            </div>
+
+            <p class="text-center text-sm text-slate-500 mt-10">
+                Tip: If you want, replace “Custom” with exact pricing later (e.g., “$149/user/mo”).
+            </p>
+        </div>
+    </section>
+
+
+    <!-- Service Area Section -->
+    <section id="service-area" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <p class="text-blue-600 font-semibold mb-3 uppercase tracking-wide">Service Area</p>
+                    <h2 class="text-4xl font-bold text-slate-900 mb-6">Southwest Florida — onsite support when you need it</h2>
+                    <p class="text-xl text-slate-600 mb-8">
+                        We’re local. That means faster onsite help and better understanding of the businesses in our community.
+                    </p>
+
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <div class="flex items-center gap-3 bg-slate-50 border border-slate-100 rounded-2xl p-4">
+                            <i data-lucide="map-pin" class="w-5 h-5 text-blue-600"></i>
+                            <p class="text-slate-700 font-semibold">Lehigh Acres</p>
+                        </div>
+                        <div class="flex items-center gap-3 bg-slate-50 border border-slate-100 rounded-2xl p-4">
+                            <i data-lucide="map-pin" class="w-5 h-5 text-blue-600"></i>
+                            <p class="text-slate-700 font-semibold">Immokalee</p>
+                        </div>
+                        <div class="flex items-center gap-3 bg-slate-50 border border-slate-100 rounded-2xl p-4">
+                            <i data-lucide="map-pin" class="w-5 h-5 text-blue-600"></i>
+                            <p class="text-slate-700 font-semibold">Fort Myers</p>
+                        </div>
+                        <div class="flex items-center gap-3 bg-slate-50 border border-slate-100 rounded-2xl p-4">
+                            <i data-lucide="map-pin" class="w-5 h-5 text-blue-600"></i>
+                            <p class="text-slate-700 font-semibold">Cape Coral</p>
+                        </div>
+                        <div class="flex items-center gap-3 bg-slate-50 border border-slate-100 rounded-2xl p-4">
+                            <i data-lucide="map-pin" class="w-5 h-5 text-blue-600"></i>
+                            <p class="text-slate-700 font-semibold">Bonita Springs</p>
+                        </div>
+                        <div class="flex items-center gap-3 bg-slate-50 border border-slate-100 rounded-2xl p-4">
+                            <i data-lucide="map-pin" class="w-5 h-5 text-blue-600"></i>
+                            <p class="text-slate-700 font-semibold">Naples</p>
+                        </div>
+                    </div>
+
+                    <p class="text-sm text-slate-500 mt-6">
+                        Need service outside these areas? Ask — we may still be able to help.
+                    </p>
+                </div>
+
+                <div class="relative">
+                    <div class="absolute -inset-4 bg-gradient-to-r from-blue-600 to-blue-400 rounded-3xl opacity-10 blur-2xl"></div>
+                    <div class="relative bg-slate-900 rounded-3xl p-10 text-white overflow-hidden">
+                        <div class="absolute inset-0 hero-pattern opacity-10"></div>
+                        <div class="relative">
+                            <h3 class="text-2xl font-bold mb-6">Ideal clients</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-center gap-3">
+                                    <i data-lucide="briefcase" class="w-5 h-5 text-blue-300"></i>
+                                    <p class="text-slate-200">Law firms & professional offices</p>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <i data-lucide="calculator" class="w-5 h-5 text-blue-300"></i>
+                                    <p class="text-slate-200">Accounting & tax services</p>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <i data-lucide="hammer" class="w-5 h-5 text-blue-300"></i>
+                                    <p class="text-slate-200">Small construction offices</p>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <i data-lucide="wrench" class="w-5 h-5 text-blue-300"></i>
+                                    <p class="text-slate-200">Auto repair & local shops</p>
+                                </div>
+                            </div>
+
+                            <div class="mt-10 bg-white/5 border border-white/10 rounded-2xl p-6">
+                                <p class="text-slate-200 font-semibold mb-2">Typical onsite work</p>
+                                <p class="text-sm text-slate-300">
+                                    Wi‑Fi & network upgrades, printers, cabling, new PC setup, secure firewall installation, and cleanup after “it just stopped working.”
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Security First Section -->
+    <section id="security" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <p class="text-blue-600 font-semibold mb-3 uppercase tracking-wide">Security First</p>
+                <h2 class="text-4xl font-bold text-slate-900 mb-6">Protect your business before problems happen</h2>
+                <p class="text-xl text-slate-600">
+                    Most incidents start with a simple mistake—phishing, weak passwords, missing updates.
+                    We build a layered security baseline that’s practical for small businesses.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white rounded-2xl p-8 shadow-lg border border-slate-100 hover:shadow-xl transition-all">
+                    <div class="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="key-round" class="w-7 h-7 text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">MFA & access control</h3>
+                    <p class="text-slate-600">Reduce account takeovers with multi-factor auth and least-privilege access.</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-lg border border-slate-100 hover:shadow-xl transition-all">
+                    <div class="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="shield-alert" class="w-7 h-7 text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Endpoint protection</h3>
+                    <p class="text-slate-600">Modern AV/EDR guidance, hardening, and safe browsing controls.</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-lg border border-slate-100 hover:shadow-xl transition-all">
+                    <div class="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="refresh-cw" class="w-7 h-7 text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Patch management</h3>
+                    <p class="text-slate-600">Keep Windows, apps, and browsers updated to close common attack paths.</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-lg border border-slate-100 hover:shadow-xl transition-all">
+                    <div class="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="database-backup" class="w-7 h-7 text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Backups you can restore</h3>
+                    <p class="text-slate-600">Backups are only real if restores work. We validate and document recovery steps.</p>
+                </div>
+            </div>
+
+            <div class="mt-14 bg-white rounded-3xl p-10 border border-slate-100 shadow-lg">
+                <div class="grid lg:grid-cols-3 gap-10 items-center">
+                    <div class="lg:col-span-2">
+                        <h3 class="text-2xl font-bold text-slate-900 mb-3">Security Baseline Checklist</h3>
+                        <p class="text-slate-600 mb-6">
+                            A simple starting point we implement for most clients—then we tailor based on your business and budget.
+                        </p>
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-blue-600"></i>
+                                <p class="text-slate-700">MFA on email + admin accounts</p>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-blue-600"></i>
+                                <p class="text-slate-700">Local admin removed where possible</p>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-blue-600"></i>
+                                <p class="text-slate-700">Backups with tested restores</p>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-blue-600"></i>
+                                <p class="text-slate-700">Patch & update schedule</p>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-blue-600"></i>
+                                <p class="text-slate-700">Basic security awareness tips</p>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-blue-600"></i>
+                                <p class="text-slate-700">Firewall rules review</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center lg:text-right">
+                        <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all hover:shadow-xl hover:-translate-y-1 inline-flex items-center justify-center gap-2">
+                            Get a Security Review
+                            <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                        </a>
+                        <p class="text-sm text-slate-500 mt-3">No pressure. Clear next steps.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16">
+                <div>
+                    <p class="text-blue-600 font-semibold mb-2 uppercase tracking-wide">Contact Us</p>
+                    <h2 class="text-4xl font-bold text-slate-900 mb-6">Let's Discuss Your IT Needs</h2>
+                    <p class="text-slate-600 text-lg mb-8">Whether you're experiencing IT issues or planning for growth, our team is ready to help. Reach out for a free consultation.</p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="map-pin" class="w-6 h-6 text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-slate-900 mb-1">Office Location</h3>
+                              <p class="text-slate-600">3705 Lee Blvd</p>
+                                <p class="text-slate-600">Lehigh Acres, Fl 33971&nbsp;</p>
+                          </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="phone" class="w-6 h-6 text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-slate-900 mb-1">Phone</h3>
+                                <p class="text-slate-600">(239) 241-3885<br><span class="text-sm text-emerald-600">24/7 Emergency Support Available</span></p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="mail" class="w-6 h-6 text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-slate-900 mb-1">Email</h3>
+                                <p class="text-slate-600">martineztechnologygroup@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="clock" class="w-6 h-6 text-blue-600"></i>
+                            </div>
+                            <div>
+                              <h3 class="font-bold text-slate-900 mb-1">Business Hours</h3>
+                              <p class="text-slate-600">Mon - Fri: 8:00 AM - 6:00 PM<br>
+                                  Sat: (Emergency only)</p>
+                                <p class="text-slate-600">Sun: (Emergency only)&nbsp;</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100">
+                    <form class="space-y-6" onsubmit="event.preventDefault(); alert('Thank you for your message! We will contact you shortly.');">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-semibold text-slate-700 mb-2">First Name</label>
+                                <input type="text" class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition-all" placeholder="John" required>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-slate-700 mb-2">Last Name</label>
+                                <input type="text" class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition-all" placeholder="Doe" required>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-700 mb-2">Company</label>
+                            <input type="text" class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition-all" placeholder="Your Company Name">
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-700 mb-2">Email</label>
+                            <input type="email" class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition-all" placeholder="john@company.com" required>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-700 mb-2">Phone</label>
+                            <input type="tel" class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition-all" placeholder="(239) 555-0000">
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-700 mb-2">How Can We Help?</label>
+                            <select class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition-all">
+                                <option>Select a service...</option>
+                                <option>Managed IT Services</option>
+                                <option>Cybersecurity</option>
+                                <option>Cloud Migration</option>
+                                <option>IT Consulting</option>
+                                <option>Current IT Issue</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-700 mb-2">Message</label>
+                            <textarea rows="4" class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition-all" placeholder="Tell us about your IT challenges..."></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 rounded-lg transition-all hover:shadow-lg">
+                            Send Message
+                        </button>
+
+                        <p class="text-xs text-slate-500 text-center">By submitting this form, you agree to our privacy policy. We never share your information.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-300 py-16 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-800 rounded-lg flex items-center justify-center">
+                            <i data-lucide="shield" class="w-6 h-6 text-white"></i>
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="font-bold text-lg text-white leading-tight">Martinez</span>
+                            <span class="text-xs text-slate-400 uppercase tracking-wider">Technology Group</span>
+                        </div>
+                    </div>
+                    <p class="text-slate-400 mb-6">Southwest Florida's premier managed IT services provider, keeping local businesses secure and productive.&nbsp;&nbsp;</p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all">
+                            <i data-lucide="linkedin" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all">
+                            <i data-lucide="facebook" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all">
+                            <i data-lucide="twitter" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-6">Services</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="hover:text-blue-400 transition-colors">Managed IT Services</a></li>
+                        <li><a href="#" class="hover:text-blue-400 transition-colors">Cybersecurity</a></li>
+                        <li><a href="#" class="hover:text-blue-400 transition-colors">Cloud Services</a></li>
+                        <li><a href="#" class="hover:text-blue-400 transition-colors">IT Consulting</a></li>
+                        <li><a href="#" class="hover:text-blue-400 transition-colors">Data Backup & Recovery</a></li>
+                        <li><a href="#" class="hover:text-blue-400 transition-colors">Help Desk Support</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-6">Company</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#about" class="hover:text-blue-400 transition-colors">About Us</a></li>
+                        <li><a href="#industries" class="hover:text-blue-400 transition-colors">Industries</a></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li><a href="#contact" class="hover:text-blue-400 transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-6">Support</h4>
+                    <ul class="space-y-3">
+                        <li></li>
+                        <li></li>
+                        <li><a href="#" class="hover:text-blue-400 transition-colors">Remote Support</a></li>
+                        <li></li>
+                        <li></li>
+                        <li><a href="#" class="hover:text-emerald-400 transition-colors">24/7 Emergency: (239)241-3885</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-sm text-slate-500">&copy; 2024 Martinez Technology Group. All rights reserved.</p>
+                <div class="flex gap-6 text-sm text-slate-500">
+                    <a href="#" class="hover:text-slate-300">Privacy Policy</a>
+                    <a href="#" class="hover:text-slate-300">Terms of Service</a>
+                    <a href="#" class="hover:text-slate-300">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Client Portal Fab (Optional) -->
+    <a href="#" class="fixed bottom-6 right-6 bg-slate-900 text-white p-4 rounded-full shadow-lg hover:bg-blue-600 transition-all z-40 flex items-center gap-2 pr-6 group">
+        <div class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center">
+            <i data-lucide="log-in" class="w-4 h-4"></i>
+        </div>
+        <span class="font-semibold hidden group-hover:inline-block transition-all">Client Portal</span>
+    </a>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking a link
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+
+    <!-- Sticky CTA -->
+    <a href="#contact"
+       class="fixed bottom-6 right-6 z-50 bg-blue-600 hover:bg-blue-700 text-white px-5 py-4 rounded-2xl font-bold shadow-2xl transition-all hover:-translate-y-1 inline-flex items-center gap-2">
+        <i data-lucide="message-square" class="w-5 h-5"></i>
+        Request a Quote
+    </a>
+
+</body>
+</html>
